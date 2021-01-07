@@ -3,8 +3,8 @@
 ## Make sure docker is working:
 ```bash
 docker -v 
-git clone https://github.com/
-cd  
+git clone https://github.com/hudsonbl/MovieWebsite.git
+cd MovieWebsite
 ```
 Create the project with the build command 
 ```bash
@@ -21,7 +21,7 @@ docker container ls --all
 lib/mysqlPool creates a sql pool. Models is where the sql queries occur. API is where the endpoints are resolved. Docker will 
 look at the .env file and initialize db with those variables. docker-compose file will state those variables. NPM Server won't
 recognize that file which is why you need to manually initialize them. Test out the endpoint with Postman using url 
-
+GET
 http://localhost:8080/movies
 
 ## More useful commands:
